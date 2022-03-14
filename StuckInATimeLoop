@@ -1,0 +1,43 @@
+using System;
+
+namespace StuckinaTimeLoop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                int N = int.Parse(Console.ReadLine());
+                // to parse string into an integer
+                int count = 1;
+                // to add counting label
+
+                if (N >=1 && N <= 100)
+                    // to test the number and ad IF condition
+                {
+                    while (count <= N)
+                    {
+                        Console.Write(count + " Abracadabra");
+                        // To write the count and message
+                        Console.WriteLine();
+                        // To add a hard return
+                        count = count + 1;
+                        // continues to execute while true
+                    }
+                }
+                else
+                {
+                    Console.Write("Plese enter an integer between 1 and 100.");
+                    // To display message.5
+                }
+            }
+
+            catch
+            {
+                Console.Write("You have an error.");
+                // To display error message..5
+            }
+        }
+    }
+}
